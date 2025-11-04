@@ -1,0 +1,18 @@
+[features]
+seeds = false
+
+[programs.localnet]
+zecretswap = "ZECRT1111111111111111111111111111111111111"
+
+[programs.devnet]
+zecretswap = "ZECRT1111111111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -t 1000000 tests/**/*.ts"
